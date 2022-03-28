@@ -15,7 +15,8 @@ const randomColor = () => {
 const showError = () => {
     loading.style.display = "block";
     chart.style.display = "none";
-    loading.innerHTML = "Oops, something went wrong,<br>please tell <a href='https://scratch.mit.edu/users/Chiroyce#comments'>Chiroyce</a> about this on their profile."
+    // loading.innerHTML = "Oops, something went wrong,<br>please tell <a href='https://scratch.mit.edu/users/Chiroyce#comments'>Chiroyce</a> about this on their profile."
+    loading.innerHTML = "Oops, something went wrong,<br>please refresh your page a few times or try again later."
 }
 
 async function updateChart() {
