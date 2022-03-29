@@ -1,6 +1,6 @@
 const chart = document.querySelector('#myChart')
 const loading = document.querySelector('#loading')
-const backendURL = "https://postgraph.chiroyce.repl.co/"
+const backendURL = "https://postgraph.chiroyce.repl.co"
 
 const randomColor = () => {
     // Taken from https://www.tutorialspoint.com/generating-random-hex-color-in-javascript
