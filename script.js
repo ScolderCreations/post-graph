@@ -16,7 +16,7 @@ const randomColor = () => {
 const showError = () => {
     loading.style.display = "block";
     chart.style.display = "none";
-    loading.innerHTML = "Oops, something went wrong,<br>this page will refresh automatically.<br>If it still isn't fixed, try again later."
+    loading.innerHTML = "Oops, something went wrong,<br />this page will refresh automatically.<br />If it still isn't fixed, try again later."
     setTimeout(() => location.reload(), 5000);
 }
 
