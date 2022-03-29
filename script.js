@@ -1,5 +1,6 @@
 const chart = document.querySelector('#myChart')
 const loading = document.querySelector('#loading')
+const backendURL = "https://postgraph.chiroyce.repl.co/"
 
 const randomColor = () => {
     // Taken from https://www.tutorialspoint.com/generating-random-hex-color-in-javascript
@@ -22,7 +23,7 @@ const showError = () => {
 async function updateChart() {
     let data;
     try {
-        data = await fetch('https://forum-test.chiroyce.repl.co/data')
+        data = await fetch(`${backendURL}/data`)
     }
     catch {
         showError();
@@ -83,7 +84,7 @@ async function createChart() {
     // descending order of post count    
     let data;
     try {
-        data = await fetch('https://forum-test.chiroyce.repl.co/data')
+        data = await fetch(`${backendURL}/data`)
     }
     catch {
         showError();
